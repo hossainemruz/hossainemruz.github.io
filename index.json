@@ -1,0 +1,64 @@
+[
+{
+	"uri": "http://hossainemruz.github.io/docker/f1/",
+	"title": "My docker",
+	"tags": [],
+	"description": "",
+	"content": "This is a sentence.\n"
+},
+{
+	"uri": "http://hossainemruz.github.io/docker/",
+	"title": "Docker",
+	"tags": [],
+	"description": "Docker home",
+	"content": " Hugo docDock theme Hugo-theme-docdock   is a theme for Hugo, a fast and modern static website engine written in Go. Hugo is often used for blogs, this theme is fully designed for documentation.\n"
+},
+{
+	"uri": "http://hossainemruz.github.io/_footer/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://hossainemruz.github.io/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://hossainemruz.github.io/",
+	"title": "Home",
+	"tags": [],
+	"description": "",
+	"content": "This is my homepage\n"
+},
+{
+	"uri": "http://hossainemruz.github.io/go/",
+	"title": "Introduction",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://hossainemruz.github.io/kubernetes/k1/",
+	"title": "Introduction",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://hossainemruz.github.io/kubernetes/",
+	"title": "Kubernetes",
+	"tags": [],
+	"description": "",
+	"content": "This is a sentence\n"
+},
+{
+	"uri": "http://hossainemruz.github.io/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+}]
