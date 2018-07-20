@@ -2,56 +2,56 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on Turtle&#39;s Blog</title>
-    <link>http://hossainemruz.github.io/</link>
+    <link>https://hossainemruz.github.io/</link>
     <description>Recent content in Home on Turtle&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://hossainemruz.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hossainemruz.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>http://hossainemruz.github.io/_footer/</link>
+      <link>https://hossainemruz.github.io/_footer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://hossainemruz.github.io/_footer/</guid>
+      <guid>https://hossainemruz.github.io/_footer/</guid>
       <description></description>
     </item>
     
     <item>
       <title>1. Dock1</title>
-      <link>http://hossainemruz.github.io/docker/d1/</link>
+      <link>https://hossainemruz.github.io/docker/d1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://hossainemruz.github.io/docker/d1/</guid>
+      <guid>https://hossainemruz.github.io/docker/d1/</guid>
       <description>This is n1 page.</description>
     </item>
     
     <item>
       <title>Go1</title>
-      <link>http://hossainemruz.github.io/go/g1/</link>
+      <link>https://hossainemruz.github.io/go/g1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://hossainemruz.github.io/go/g1/</guid>
+      <guid>https://hossainemruz.github.io/go/g1/</guid>
       <description>This is g1 page.</description>
     </item>
     
     <item>
       <title>Kubernetes introduction</title>
-      <link>http://hossainemruz.github.io/kubernetes/k1/</link>
+      <link>https://hossainemruz.github.io/kubernetes/k1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://hossainemruz.github.io/kubernetes/k1/</guid>
+      <guid>https://hossainemruz.github.io/kubernetes/k1/</guid>
       <description>This is k1 page.</description>
     </item>
     
     <item>
       <title>a. Net1</title>
-      <link>http://hossainemruz.github.io/docker/networking/n1/</link>
+      <link>https://hossainemruz.github.io/docker/networking/n1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://hossainemruz.github.io/docker/networking/n1/</guid>
+      <guid>https://hossainemruz.github.io/docker/networking/n1/</guid>
       <description>This is n1 page.</description>
     </item>
     

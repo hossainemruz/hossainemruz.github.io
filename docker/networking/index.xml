@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>2. Networking on Turtle&#39;s Blog</title>
-    <link>http://hossainemruz.github.io/docker/networking/</link>
+    <link>https://hossainemruz.github.io/docker/networking/</link>
     <description>Recent content in 2. Networking on Turtle&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://hossainemruz.github.io/docker/networking/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hossainemruz.github.io/docker/networking/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>a. Net1</title>
-      <link>http://hossainemruz.github.io/docker/networking/n1/</link>
+      <link>https://hossainemruz.github.io/docker/networking/n1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://hossainemruz.github.io/docker/networking/n1/</guid>
+      <guid>https://hossainemruz.github.io/docker/networking/n1/</guid>
       <description>This is n1 page.</description>
     </item>
     
