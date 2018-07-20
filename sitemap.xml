@@ -3,10 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://hossainemruz.github.io/docker/f1/</loc>
-  </url>
-  
-  <url>
     <loc>http://hossainemruz.github.io/docker/</loc>
     <lastmod>2017-04-24T18:36:24+02:00</lastmod>
   </url>
@@ -16,12 +12,16 @@
   </url>
   
   <url>
-    <loc>http://hossainemruz.github.io/categories/</loc>
-    <priority>0</priority>
+    <loc>http://hossainemruz.github.io/docker/d1/</loc>
   </url>
   
   <url>
-    <loc>http://hossainemruz.github.io/</loc>
+    <loc>http://hossainemruz.github.io/docker/networking/</loc>
+  </url>
+  
+  <url>
+    <loc>http://hossainemruz.github.io/categories/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -29,7 +29,11 @@
   </url>
   
   <url>
-    <loc>http://hossainemruz.github.io/kubernetes/k1/</loc>
+    <loc>http://hossainemruz.github.io/go/g1/</loc>
+  </url>
+  
+  <url>
+    <loc>http://hossainemruz.github.io/</loc>
   </url>
   
   <url>
@@ -37,8 +41,16 @@
   </url>
   
   <url>
+    <loc>http://hossainemruz.github.io/kubernetes/k1/</loc>
+  </url>
+  
+  <url>
     <loc>http://hossainemruz.github.io/tags/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://hossainemruz.github.io/docker/networking/n1/</loc>
   </url>
   
 </urlset>

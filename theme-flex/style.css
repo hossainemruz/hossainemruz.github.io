@@ -111,6 +111,9 @@ header nav.shortcuts li a:focus,
 header nav.shortcuts li a:hover {
     background-color: #4d4d4d;
 }
+.menu-active{
+    background-color: #87868a;
+}
 
 header nav.shortcuts li a {
     -webkit-box-align: center;
@@ -142,7 +145,7 @@ article>aside {
     left: 0;
     padding: 2rem 0rem 1rem 0rem;
     position: fixed;
-    top: 3.5rem;
+    top: 2.5rem;
     width: 20rem;
     overflow-y: auto;
 }
@@ -150,6 +153,7 @@ article>aside {
 article>aside .menu {
     line-height: 2rem;
     list-style-type: none;
+    margin: 0%;
 }
 
 article>aside .menu>label {
@@ -165,13 +169,13 @@ article>aside .menu ul {
 }
 
 article>aside .menu>.dd-item {
-    margin: 0.5rem 0px 0.5rem 20px;
+    margin: 0.1rem 0px 0.1rem 20px;
 }
 
 article>aside .menu .dd-item {
-    padding-left: 1rem;
+    padding-left: 0.2rem;
     list-style: none;
-    font-size: 13px;
+    font-size: 11pt;
 }
 
 article>aside .menu .dd-item.alwaysopen>ul {
@@ -187,18 +191,11 @@ article>aside .menu .dd-item.active>ul {
 }
 
 article>aside .menu .dd-item.active>div {
-    /* ============================================== */
-    background-color: rgba(0, 0, 0, 0.658);
-    color: white;
+    background-color:  rgb(187, 187, 192);
 }
 
 article>aside .menu .dd-item>div {
     padding-left: 10px;
-}
-
-article>aside .menu .dd-item.active>div * {
-    /* font-weight: bold; */
-    border-bottom: dotted 1px black;
 }
 
 article>aside .menu .dd-item.haschildren>div {
@@ -235,26 +232,17 @@ article>aside .menu .dd-item div a {
     text-decoration: none;
 }
 
-article>aside .menu .dd-item div a:hover,
 article>aside .menu .dd-item div a:focus,
 article>aside .menu .dd-item div a:active {
-    /* ======================================= */
     background-color: rgba(208, 208, 212, 0.795);
     border-radius: .2rem;
     padding: 0 0rem;
 }
 
-article>aside .menu .dd-item div i.category-icon:active,
-article>aside .menu .dd-item div i.category-icon:focus,
-article>aside .menu .dd-item div i.category-icon:hover {
-    background-color: #eee;
-    border-radius: .2rem;
-    padding: 0 0rem;
-}
-
-article>aside .menu .dd-item li {
-    background-color: #dfdfdf;
-    border-left: 1px solid rgb(122, 121, 121);
+article>aside .menu .dd-item div a:hover {
+    background-color: rgb(162, 162, 163);
+    font-size: 13pt;
+    padding-left: 5px;
 }
 
 article>aside section {
@@ -331,7 +319,7 @@ section strong {
 .searchbox {
     margin: 0rem 0rem 0rem 0rem;
     padding: 0rem 0rem;
-    padding-top: 1rem;
+    padding-top: 0rem;
     color: #012a3c;
     text-align: center;
 }
@@ -432,7 +420,16 @@ article section.page h1:first-of-type {
     font-size: 3.25rem;
     line-height: 2.7rem;
 }
-
+.sidebar-header{
+    font-family: "Novacento Sans Wide", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    color: #060606;
+    font-weight: 100;
+    font-size: 1.5rem;
+    line-height: 1rem;
+    margin: 5px;
+}
 article section.page h1 {
     margin-top: 4rem;
 }
