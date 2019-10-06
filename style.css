@@ -14,7 +14,7 @@
 }
 
 .profile{
-    width: 50%;
+    width: 40%;
 }
 
 .profile-picture{
@@ -41,10 +41,40 @@
 .contact{
     font-size: 24pt;
 }
+.contact a + a {
+    padding: 5px;
+}
 
-.summery{
-    width: 50%;
-    /* background: lightblue; */
+a:hover{
+    filter: brightness(150%);
+}
+
+.summary{
+    width: 60%;
+    text-align: left;
+    margin-top: 30px;
+    margin-right: 10%;
+}
+
+.greeting{
+    font-size: 24pt;
+}
+
+.summary p{
+    border-left: 3px solid darkgray;
+    padding-left: 10px;
+}
+.experienced-fields{
+   margin-left: 0px;
+}
+
+.experienced-fields li{
+    border: 1px solid #0bceaf;
+    padding: 4px 10px;
+    border-radius: 4px;
+    list-style: none;
+    display: inline-block;
+    margin-bottom: 5px;
 }
 
 /* ============ what-i-do.html======== */
