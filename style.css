@@ -91,6 +91,41 @@ a:hover{
     justify-content: space-between;
 }
 
+.my-doing-list{
+    list-style: none;
+    display: flex;
+    background: gray;
+}
+
+.my-doing-card{
+    height: 300px;
+    width: 15%;
+    min-width: 300px;
+    display: block;
+    background: lightblue;
+    padding: 5px;
+    margin: 5px;;
+}
+
+.my-doing-card-head{
+    display: flex;
+    background: lightcoral;
+    padding: 0px;
+    margin: 0px;
+}
+
+.my-doing-card-head img{
+    height: 50px;
+    width: 50px;
+    margin-left: 5px;
+    border-radius: 50%;
+}
+
+.my-doing-card-head h2{
+    margin: 0px;
+    padding: 5px;
+}
+
 /* ============ skills.html======== */
 .skills{
     /* background: blue; */
