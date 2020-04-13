@@ -41,9 +41,8 @@ jobs:
     # deploy website
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3.5.6
-      env:
-        ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-        PUBLISH_BRANCH: master
-        PUBLISH_DIR: ./public
       with:
-        emptyCommits: false
+        deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+        publish_branch: master
+        publish_dir: ./public
+        allow_empty_commit: false
