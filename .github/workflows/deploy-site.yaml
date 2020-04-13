@@ -11,9 +11,6 @@ jobs:
     runs-on: ubuntu-18.04
 
     steps:
-    # fix git config ref: https://github.com/actions/checkout/issues/14#issuecomment-523916396
-    - name: Fix Git Config
-      run: echo -e '[url "https://github.com/"]\n  insteadOf = "git@github.com:"' >> ~/.gitconfig
     # checkout to master branch
     - name: Checkout
       uses: actions/checkout@master
@@ -42,7 +39,7 @@ jobs:
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3.5.6
       with:
-        deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+        deploy_key: ${{ secrets.ACTION_DEPLOY_KEY }}
         publish_branch: master
         publish_dir: ./public
         allow_empty_commit: false
