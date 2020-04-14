@@ -1,0 +1,54 @@
+# my experiences
+experiences:
+  - designation: Software Engineer
+    company:
+      name: AppCode Inc.
+      url: "https://www.appscode.com"
+      location: Dhaka Branch
+      overview: AppsCode Ltd. is a subsidiary company of AppsCode Inc. USA. An Integrated platform for collaborative coding, testing & deploying containerized apps.
+    start: Nov 2017
+    # end: Dec 2020
+    responsibilities:
+      - Design, develop and manage disaster recovery tool Stash that backup Kubernetes volumes, databases and cluster's resource definition.
+      - Worked on database operator KubeDB that deploy and manages most popular databases inside Kubernetes cluster in Kubernetes native way.
+      - Added support for Prometheus monitoring in various AppsCode's tools.
+      - Provide support to the users of our various tools.
+
+  - designation: Intern
+    company:
+      name: AppCode Inc.
+      url: "https://www.appscode.com"
+      location: Dhaka Branch
+      overview: AppsCode Ltd. is a subsidiary company of AppsCode Inc. USA. An Integrated platform for collaborative coding, testing & deploying containerized apps.
+    start: March 2016
+    end: May 2016
+    responsibilities:
+      - Design, develop and test a sample library website.
+      - Learn git version control.
+      - Learn backbone.js framework.
+
+  - designation: Demo 1
+    company:
+      name: Demo Co.
+      url: "https://www.appscode.com"
+      location: Dhaka Branch
+      overview: this is a demo company.
+    start: March 2016
+    end: May 2016
+    responsibilities:
+      - Design, develop and test a sample library website.
+      - Learn git version control.
+      - Learn backbone.js framework.
+
+  - designation: Demo 2
+    company:
+      name: Demo Co.
+      url: "https://www.appscode.com"
+      location: Dhaka Branch
+      overview: this is a demo company.
+    start: March 2016
+    end: May 2016
+    responsibilities:
+      - Design, develop and test a sample library website.
+      - Learn git version control.
+      - Learn backbone.js framework.

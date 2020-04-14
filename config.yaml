@@ -1,4 +1,36 @@
 baseURL: "http://example.org/"
 languageCode: "en-us"
-title: "Pothik"
+title: "Toha"
 theme: "toha"
+
+# Menus of the home page
+menus:
+  main:
+  - name: Home
+    url: "#home"
+    weight: 1
+  - name: About
+    url: "#about"
+    weight: 2
+  - name: Skills
+    url: "#skills"
+    weight: 3
+  - name: Experiences
+    url: "#experiences"
+    weight: 4
+  - name: Projects
+    url: "#projects"
+    weight: 5
+  - name: Recent Posts
+    url: "#recent-posts"
+    weight: 6
+  - name: Achievements
+    url: "#achievements"
+    weight: 7
+
+# Optional site parameters
+params:
+  logo: assets/images/logos/project-default.png
+  contactInfo:
+    email: hossainemruz@gmail.com
+    phone: "+8801770582121"

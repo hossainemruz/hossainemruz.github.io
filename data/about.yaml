@@ -1,0 +1,55 @@
+name: Md. Emruz Hossain
+designation: Software Engineer
+company:
+  name: AppsCode Inc.
+  url: "https://www.appscode.com"
+
+# my resume
+resume: "assets/files/resume.pdf"
+
+# a summary about me
+summary: 'I am a passionate software engineer with 2 years of working
+  experience. I built OSS tools for Kubernetes using GO for
+  deploying database in Kubernetes and for disaster recovery. I am
+  working as team lead of AppsCode’s [Stash](https://appscode.com/products/stash/)
+  project. Enjoy interacting with end users.'
+
+# my social links
+socialLinks:
+- name: Email
+  icon: "fas fa-envelope"
+  url: "hossainemruz@gmail.com"
+
+- name: Github
+  icon: "fab fa-github"
+  url: "https://www.github.com/hossainemruz"
+
+- name: Stackoverflow
+  icon: "fab fa-stack-overflow"
+  url: "#"
+
+- name: LinkedIn
+  icon: "fab fa-linkedin"
+  url: "#"
+
+- name: Twitter
+  icon: "fab fa-twitter"
+  url: "#"
+
+- name: Facebook
+  icon: "fab fa-facebook"
+
+# my soft skills
+softSkills:
+- name: Leadership
+  percentage: 85
+  color: blue
+- name: Team Work
+  percentage: 90
+  color: yellow
+- name: Communication
+  percentage: 85
+  color: pink
+- name: Hard Working
+  percentage: 85
+  color: green
