@@ -3,8 +3,10 @@ title: "Markdown Syntax Guide"
 date: 2020-04-14T20:22:51+06:00
 hero: /assets/images/background/sunrise-mountain.jpg
 author:
-    name: Md. Emruz Hossain
-    image: /assets/images/profile-image.jpg
+  name: Md. Emruz Hossain
+  image: /assets/images/profile-image.jpg
+categories:
+- misc
 ---
 
 

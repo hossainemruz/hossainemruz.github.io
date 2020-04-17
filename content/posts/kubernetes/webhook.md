@@ -1,8 +1,12 @@
 ---
 title: "Deep dive into Kubernetes Webhooks"
 date: 2020-04-14T20:20:40+06:00
-hero: assets/recent-posts/kubernetes.png
-summary: This post discuss how Kubernetes webhooks works and how you can utilize them in various scenarios.
+hero: /assets/images/recent-posts/kubernetes.png
+author:
+    name: Md. Emruz Hossain
+    image: /assets/images/profile-image.jpg
+categories:
+- kubernetes
 ---
 
 # Deep dive into kubernetes webhook

@@ -1,8 +1,14 @@
 ---
 title: "Building multi-stage docker images"
 date: 2020-04-14T20:21:48+06:00
-hero: assets/images/recent-posts/docker-2.png
-summary: This guide will show how to reduce docker image size using multi-stage docker build technique.
+hero: /assets/images/recent-posts/docker-2.png
+id: docker-multi-stage
+author:
+    name: Md. Emruz Hossain
+    image: /assets/images/profile-image.jpg
+categories:
+    - docker
+    - docker-multi-stage
 ---
 
 # Multi-stage docker image

@@ -1,8 +1,13 @@
 ---
 title: "Handling File in Go"
 date: 2020-04-14T20:22:18+06:00
-hero: assets/images/background/bird.jpg
-summary: Here, we will see different technique to work with file in golang. Here, we will explore how to input from a file and how to write output into a file. We will also see some few other tricks.
+hero: /assets/images/background/bird.jpg
+author:
+    name: Md. Emruz Hossain
+    image: /assets/images/profile-image.jpg
+categories:
+    - go
+    - go-basic
 ---
 
 # Handling file in Golang

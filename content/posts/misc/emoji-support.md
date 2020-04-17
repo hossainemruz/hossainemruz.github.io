@@ -3,8 +3,10 @@ title: "Emoji Support"
 date: 2020-04-17T02:33:39+06:00
 hero: /assets/images/background/flower.jpg
 author:
-    name: Md. Emruz Hossain
-    image: /assets/images/profile-image.jpg
+  name: Md. Emruz Hossain
+  image: /assets/images/profile-image.jpg
+categories:
+- misc
 ---
 
 Emoji can be enabled in a Hugo project in a number of ways. 
