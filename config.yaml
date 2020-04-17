@@ -45,7 +45,7 @@ menus:
 
 # Optional site parameters
 params:
-  logo: assets/images/logos/project-default.png
+  logo: /assets/images/logos/penguin.svg
   contactInfo:
     email: hossainemruz@gmail.com
     phone: "+8801770582121"
