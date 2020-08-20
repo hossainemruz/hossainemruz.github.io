@@ -29,41 +29,19 @@ var projectCards;
     if (document.getElementById('typing-carousel-data') != undefined) {
       var ul = document.getElementById('typing-carousel-data').children;
 
-      var data = [];
-      Array.from(ul).forEach(el => {
-        data.push(el.textContent);
-      })
+      if (ul.length != 0) {
+        var data = [];
+        Array.from(ul).forEach(el => {
+          data.push(el.textContent);
+        })
 
-      ityped.init('#ityped', {
-        strings: data,
-        startDelay: 200,
-        loop: true
-      });
-    }
-
-    // ================= Smooth Scroll ===================
-    // Add smooth scrolling to all links
-    $("a").on('click', function (event) {
-
-      // Make sure this.hash has a value before overriding default behavior
-      if (this.hash !== "") {
-        // Prevent default anchor click behavior
-        event.preventDefault();
-
-        // Store hash
-        var hash = this.hash;
-
-        // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 800, function () {
-
-          // Add hash (#) to URL when done scrolling (default click behavior)
-          window.location.hash = hash;
+        ityped.init('#ityped', {
+          strings: data,
+          startDelay: 200,
+          loop: true
         });
-      } // End if
-    });
+      }
+    }
 
     // ============== Fix Timelines Horizontal Lines =========
     var hLines = document.getElementsByClassName("horizontal-line");
@@ -89,31 +67,42 @@ var projectCards;
     function adjustSkillCardsHeight() {
       if (!isMobile) { // no need to adjust height for mobile devices
         // primary skills
-        var el = document.getElementById("primary-skills").children;
-        var maxHeight = 0;
-        for (let i = 0; i < el.length; i++) {
-          if (el[i].children[0].clientHeight > maxHeight) {
-            maxHeight = el[i].children[0].clientHeight;
+        var skillCards = document.getElementById("primary-skills");
+        if (skillCards != null) {
+          var cardElems = skillCards.getElementsByClassName("card");
+          var maxHeight = 0;
+          for (let i = 0; i < cardElems.length; i++) {
+            if (cardElems.item(i).clientHeight > maxHeight) {
+              maxHeight = cardElems.item(i).clientHeight;
+            }
           }
-        }
-        for (let i = 0; i < el.length; i++) {
-          el[i].children[0].setAttribute("style", "min-height: " + maxHeight + "px;")
+          for (let i = 0; i < cardElems.length; i++) {
+            cardElems.item(i).setAttribute("style", "min-height: " + maxHeight + "px;");
+          }
         }
       }
     }
-    adjustSkillCardsHeight();
+    $(window).on("load", function () {
+      adjustSkillCardsHeight();
+    });
 
     // ================== Project cards =====================
     // Add click action on project category selector buttons
-    var btns = document.getElementById("project-filter-buttons").children;
+    var filterButtons = document.getElementById("project-filter-buttons");
+    if (filterButtons != null) {
+      var btns = filterButtons.children;
 
-    for (let i = 0; i < btns.length; i++) {
-      btns[i].onclick = function () {
-        showGithubStars(btns[i].id);
+      for (let i = 0; i < btns.length; i++) {
+        btns[i].onclick = function () {
+          showGithubStars(btns[i].id);
+        }
       }
     }
 
-    projectCards = $(".filtr-projects").filterizr({ layout: 'sameWidth' });
+    var projectCardHolder = document.getElementById("project-card-holder");
+    if (projectCardHolder != null && projectCardHolder.children.length != 0) {
+      projectCards = $(".filtr-projects").filterizr({ layout: 'sameWidth' });
+    }
 
     function showGithubStars() {
       // fix the github button class
@@ -134,15 +123,18 @@ var projectCards;
 
     function adjustRecentPostsHeight() {
       if (!isMobile) { // no need to adjust height for mobile devices
-        let el = document.getElementById("recent-posts").children;
-        let maxHeight = 0;
-        for (let i = 0; i < el.length; i++) {
-          if (el[i].children[0].clientHeight > maxHeight) {
-            maxHeight = el[i].children[0].clientHeight;
+        let recentPostCards = document.getElementById("recent-post-cards")
+        if (recentPostCards != null) {
+          let el = recentPostCards.children;
+          let maxHeight = 0;
+          for (let i = 0; i < el.length; i++) {
+            if (el[i].children[1].clientHeight > maxHeight) {
+              maxHeight = el[i].children[1].clientHeight;
+            }
           }
-        }
-        for (let i = 0; i < el.length; i++) {
-          el[i].children[0].setAttribute("style", "min-height: " + maxHeight + "px;")
+          for (let i = 0; i < el.length; i++) {
+            el[i].children[1].setAttribute("style", "min-height: " + maxHeight + "px;")
+          }
         }
       }
     }
@@ -249,14 +241,14 @@ var projectCards;
     }
     function twoColumnRow(gallery, entries, i) {
       let entry1 = document.createElement("div");
-      entry1.classList.add("col-lg-6", "col-md-6", "m-0", "p-0");
+      entry1.classList.add("col-6", "m-0", "p-0");
       entry1.appendChild(entries[i].cloneNode(true));
       entry1.children[0].classList.add("img-type-1");
       gallery.appendChild(entry1);
       i++;
 
       let entry2 = document.createElement("div");
-      entry2.classList.add("col-lg-6", "col-md-6", "m-0", "p-0");
+      entry2.classList.add("col-6", "m-0", "p-0");
       entry2.appendChild(entries[i].cloneNode(true));
       entry2.children[0].classList.add("img-type-1");
       gallery.appendChild(entry2);
@@ -265,7 +257,7 @@ var projectCards;
 
     function singleColumnRow(gallery, entries, i) {
       let entry1 = document.createElement("div");
-      entry1.classList.add("col-lg-6", "col-md-6", "m-0", "p-0");
+      entry1.classList.add("col-12", "m-0", "p-0");
       entry1.appendChild(entries[i].cloneNode(true));
       entry1.children[0].classList.add("img-type-1");
       gallery.appendChild(entry1);
@@ -275,6 +267,9 @@ var projectCards;
     function showAchievements() {
       // show achievements from achievements-holder div
       let gallery = document.getElementById("gallery");
+      if (gallery == null) {
+        return
+      }
       gallery.innerHTML = "";
       const entries = document.getElementById("achievements-holder").children;
       let len = entries.length;
