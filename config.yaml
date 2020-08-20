@@ -1,5 +1,6 @@
-baseURL: "https://hossainemruz.github.io/"
-languageCode: "en-us"
+baseURL: https://hossainemruz.github.io
+
+languageCode: en-us
 title: "Toha"
 theme: "toha"
 
@@ -8,6 +9,10 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+  tableOfContents:
+    startLevel: 2
+    endLevel: 6
+    ordered: false
 
 # Enable Google Analytics
 googleAnalytics: UA-123-45
@@ -18,33 +23,55 @@ disqusShortname: hossainemruz-github-io
 # Enable global emoji support
 enableEmoji: true
 
-# Menus of the home page
-menus:
-  main:
-  - name: Home
-    url: "#home"
-    weight: 1
-  - name: About
-    url: "#about"
-    weight: 2
-  - name: Skills
-    url: "#skills"
-    weight: 3
-  - name: Experiences
-    url: "#experiences"
-    weight: 4
-  - name: Projects
-    url: "#projects"
-    weight: 5
-  - name: Recent Posts
-    url: "#recent-posts"
-    weight: 6
-  - name: Achievements
-    url: "#achievements"
-    weight: 7
-
-# Optional site parameters
+# Site parameters
 params:
-  contactInfo:
-    email: hossainemruz@gmail.com
-    phone: "+8801770582121"
+  # Copyright Notice
+  copyright: © 2020 Copyright.
+
+  # Meta description for my site.  This will help the search engines to find my site.
+  description: Example site for hugo theme Toha.
+
+  # Background image of the landing page
+  background: "images/background.jpg"
+
+  # Provide logos for my site. The inverted logo will be used in the initial
+  # transparent navbar and the main logo will be used in the non-transparent navbar.
+  # It will default to the theme logos if not provided.
+  logo:
+    main: /assets/images/main-logo.png
+    inverted: /assets/images/inverted-logo.png
+
+  # GitHub repo URL of my site
+  gitRepo: https://github.com/hossainemruz/toha-example-site
+
+  # specify whether I want to write some blog posts or not
+  enableBlogPost: true
+
+  # specify whether I want to show Table of Contents in reading page
+  enableTOC: true
+
+  # specify the list of custom menus that I want to show in the top navbar.
+  # they will be separated by a divider from the main menus.
+  customMenus:
+  - name: Notes
+    url: https://hossainemruz.gitbook.io/notes/
+
+  # Provide newsletter configuration. This feature hasn't been implemented yet.
+  # Currently, I can just hide it from the footer.
+  newsletter:
+    enable: true
+
+  # some information about I
+  author:
+    name: "Emruz Hossain"
+    # nickname: "Emruz"
+    image: "images/profile-image.jpg"
+    # give my contact information. they will be used in the footer
+    contactInfo:
+      email: "hossainemruz@gmail.com"
+      phone: "+8801770582121"
+    # a summary of what I do
+    summary:
+    - I am a Developer
+    - I work with Go
+    - I love to work with some fun projects
