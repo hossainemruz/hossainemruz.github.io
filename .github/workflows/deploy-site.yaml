@@ -1,45 +1,33 @@
-name: Deploy Website
+name: Deploy to Github Pages
 
-# run when pushed to master branch
+# run when pushed to "source" branch
 on:
   push:
     branches:
-    - source
+      - source
 
 jobs:
-  build-deploy:
+  deploy:
     runs-on: ubuntu-18.04
-
     steps:
-    # checkout to master branch
-    - name: Checkout
-      uses: actions/checkout@master
-      with:
-        submodules: true
-    
-    # setup hugo
-    - name: Setup Hugo
-      uses: peaceiris/actions-hugo@v2.4.9
-      with:
-        hugo-version: '0.69.0'
-        extended: true
-    
-    # setup node
-    - name: Setup Node
-      uses: actions/setup-node@v1.4.1
-      with:
-        node-version: '10.x'
-    
-    # build site
-    - name: Build
-      run: |
-        hugo --gc --minify --cleanDestinationDir
-    
-    # deploy website
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3.5.6
-      with:
-        deploy_key: ${{ secrets.ACTION_DEPLOY_KEY }}
-        publish_branch: master
-        publish_dir: ./public
-        allow_empty_commit: false
+      - uses: actions/checkout@v2
+        with:
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          # fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.74.2'
+          extended: true
+
+      - name: Build
+        run: hugo --minify
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: master
+          publish_dir: ./public
+          allow_empty_commit: false
