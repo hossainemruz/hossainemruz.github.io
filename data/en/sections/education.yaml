@@ -1,0 +1,64 @@
+
+# section information
+section:
+  name: Education
+  id: education
+  template: sections/education.html # Use "sections/education-alt.html for alternate template.
+  enable: true
+  weight: 6
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+degrees:
+- name: B.Sc. in Computer Science & Engineering
+  icon: fa-graduation-cap
+  timeframe: 2013-2017
+  institution:
+    name: Chittagong University of Engineering & Technology
+    url: "#"
+  grade: #(optional)
+    scale: CGPA
+    achieved: 3.28
+    outOf: 4
+  # takenCourses: #(optional)
+  #   # if true, the courses will be rendered as a table otherwise it will render as a list and the grades will be hidden.
+  #   showGrades: true
+  #   courses:
+  #   - name: Data Structures and Algorithm
+  #     achieved: 3.75
+  #     outOf: 4
+  #   - name: Network Security
+  #     achieved: 3.80
+  #     outOf: 4
+  #   - name: Operating System
+  #     achieved: 3.5
+  #     outOf: 4
+  #   - name: Artificial Intelligent
+  #     achieved: 3.75
+  #     outOf: 4
+  publications: #(optional)
+  - title: An IoT based System for Riverine Vessel Monitoring
+    url: "#"
+  extracurricularActivities: #(optional)
+  - Participated in various national and international Programming contests
+  - Worked as instructor of CUET Computer Club
+- name: Higher Secondary School Certificate
+  icon: fa-university
+  timeframe: 2010-2012
+  institution:
+    name: Sristy College of Tangail
+    # url: "#"
+  grade: #(optional)
+    scale: GPA
+    achieved: 5
+    outOf: 5
+- name: Secondary School Certificate
+  icon: fa-school
+  timeframe: 2005-2010
+  institution:
+    name: Lowhati M. Azhar Memorial High School
+  grade: #(optional)
+    scale: GPA
+    achieved: 4.38
+    outOf: 5

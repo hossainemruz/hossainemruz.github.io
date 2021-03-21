@@ -1,0 +1,18 @@
+# some information about you
+name: "Emruz Hossain"
+nickname: "Emruz"
+# greeting message before your name. it will default to "Hi! I am" if not provided
+greeting: "Hi, I am"
+image: "images/author/profile.jpg"
+# give your some contact information. they will be used in the footer
+contactInfo:
+  email: "hossainemruz@gmail.com"
+  phone: "+8801770582121"
+
+# some summary about what you do
+summary:
+- I am a Developer
+- I work with Go
+- I work with Kubernetes
+- I work on open-source projects
+- I love to work with some fun projects

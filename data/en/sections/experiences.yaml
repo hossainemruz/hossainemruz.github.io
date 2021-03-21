@@ -1,0 +1,49 @@
+# section information
+section:
+  name: Experiences
+  id: experiences
+  enable: true
+  weight: 3
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true 
+
+# Your experiences
+experiences:
+- company:
+    name: AppCode Ltd.
+    url: https://www.appscode.com
+    location: Dhaka Branch
+    # company overview
+    overview: AppsCode Ltd. is a subsidiary company of AppsCode Inc. USA. Its mission is to accelerate the transition to Containers by building a Kubernetes-native Data Platform.
+  positions:
+  - designation: Lead Software Engineer
+    start: Jan 2021
+    responsibilities:
+    - Lead [Stash](https://stash.run/) Project
+    - Lead backup part of [KubeDB](https://kubedb.com/)
+    - Collaborate with front-end team for integration of KubeDB and Stash with [ByteBuilders](https://byte.builders/).
+  - designation: Software Engineer
+    start: Nov 2017
+    end: Dec 2020
+    # give some points about what was your responsibilities at the company.
+    responsibilities:
+    - Design, develop and manage disaster recovery tool Stash that backup Kubernetes volumes, databases and cluster's resource definition.
+    - Worked on database operator KubeDB that deploy and manages most popular databases inside Kubernetes cluster in Kubernetes native way.
+    - Added support for Prometheus monitoring in various AppsCode's tools.
+    - Provide support to the users of our various tools.
+
+
+- company:
+    name: AppsCode Ltd.
+    url: "https://www.appscode.com"
+    location: Dhaka, Bangladesh
+    overview: AppsCode Ltd. is a subsidiary company of AppsCode Inc. USA. Its mission is to accelerate the transition to Containers by building a Kubernetes-native Data Platform.
+  positions:
+  - designation: Intern
+    start: March 2016
+    end: May 2016
+    responsibilities:
+    - Design, develop and test a sample library website.
+    - Learn git version control.
+    - Learn backbone.js framework.
