@@ -8,4 +8,4 @@ description: Portfolio and personal blog of Emruz Hossain.
 # they will be separated by a divider from the main menus.
 customMenus:
 - name: Notes
-  url: https://hossainemruz.gitbook.io/notes/
+  url: /notes
