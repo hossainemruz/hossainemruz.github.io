@@ -168,6 +168,12 @@ img.right {
   font-size: 10pt;
 }
 
+.flag-icon {
+  width: 16px !important;
+  margin-top: 3px;
+  margin-right: 3px;
+}
+
 /* ====== codeblocks ====== */
 table {
   border-radius: 0.1rem;
@@ -331,6 +337,14 @@ mark {
 
 .footer input:focus {
   background-color: #e5e9f2;
+}
+
+.footer #disclaimer{
+  color: #8392a5 !important;
+  text-align: justify;
+}
+.footer #disclaimer>strong{
+  color: #c0ccda!important;
 }
 
 .footer #theme {
