@@ -1,6 +1,6 @@
 ---
 title: "July 2022: The first step"
-date: 2022-07-31T13:00:00+06:00
+date: 2022-07-31T10:00:00+06:00
 description: The starting of my monthly self-reflection.
 menu:
   sidebar:
